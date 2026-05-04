@@ -1,0 +1,244 @@
+/* =============================================
+   JO.KIDS - CSS FINAL (Clean & Organized)
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --pink: #db2777;
+    --purple: #6d28d9;
+    --dark: #1e2937;
+}
+
+/* ====================== GLOBAL ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ====================== NAVBAR ====================== */
+.navbar {
+    padding: 16px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.navbar-brand span {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark) !important;
+    font-size: 1.05rem;
+    padding: 10px 18px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--pink) !important;
+}
+
+/* ====================== HERO ====================== */
+.hero-bg {
+    background: linear-gradient(135deg, #c81e6b, #5b21b6);
+    color: white;
+    padding: 140px 0 120px;
+    position: relative;
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.hero-bg>* {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-bg h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: left;
+}
+
+/* ====================== BUTTONS ====================== */
+.btn-whatsapp {
+    background-color: #fbbf24;
+    color: #1e2937;
+    border: 2px solid #fbbf24;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 7px 18px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #f59e0b;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-outline-primary {
+    background-color: white;
+    color: #f59e0b;
+    border: 2px solid #f59e0b;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 7px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #f59e0b;
+    color: white;
+}
+
+/* ====================== SECTION TITLE ====================== */
+.section-title {
+    color: var(--purple);
+    font-size: 2.1rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3.5px;
+    background: linear-gradient(to right, var(--pink), var(--purple));
+}
+
+/* ====================== PROGRAM UNGGULAN - RE-DESAIN TOTAL FRESH ====================== */
+.fresh-program {
+    display: flex;
+    gap: 24px;
+    padding: 32px 28px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s ease;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.fresh-program:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(219, 39, 119, 0.18);
+}
+
+.fresh-icon {
+    font-size: 3.5rem;
+    flex-shrink: 0;
+    width: 75px;
+}
+
+.fresh-program h4 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.fresh-program p {
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    background: linear-gradient(135deg, #1e2937, #0f172a);
+    color: #e2e8f0;
+    padding: 70px 0 40px;
+}
+
+footer a:hover {
+    color: #ec4899;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 992px) {
+    .hero-bg h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-bg {
+        padding: 100px 0 80px;
+    }
+}
+
+/* Utility */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* ====================== WARNA ICON PROGRAM ====================== */
+
+/* Playgroup - Pink */
+.card:nth-child(1) i {
+    color: #ec4899 !important;
+}
+
+/* Calistung + Tahfidz - Ungu */
+.card:nth-child(2) i {
+    color: #6d28d9 !important;
+}
+
+/* English Kids - Teal / Biru Muda */
+.card:nth-child(3) i {
+    color: #14b8a6 !important;
+}
+
+/* Bonus: Icon lebih besar saat hover */
+.card i {
+    transition: all 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.2);
+}
+
+/* ====================== ANIMASI CARD PROGRAM UNGGULAN ====================== */
+.card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover i {
+    transform: scale(1.2) rotate(8deg);
+}
