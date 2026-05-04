@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Custom CSS (Fixed Path) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -21,96 +21,119 @@
     <div id="navbar-placeholder"></div>
 
     <!-- HERO CONTACT -->
-    <section class="hero-bg py-5 py-md-6 text-white text-center">
+    <section class="hero-bg text-center pb-4">
         <div class="container">
-            <h1 class="display-4 fw-bold">Hubungi Kami</h1>
-            <p class="lead">Siap membantu pertanyaan dan pendaftaran anak Anda</p>
+            <h1 class="display-4 fw-bold hero-title mb-3">
+                Hubungi <span class="text-gradient">Kami</span>
+            </h1>
+            <p class="lead text-secondary mb-0">Siap membantu pertanyaan dan pendaftaran anak Anda</p>
         </div>
     </section>
 
-    <section class="py-5">
+    <!-- KONTEN UTAMA: INFO & MAPS -->
+    <section class="py-5 bg-white">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-stretch">
 
-                <!-- Info Kontak -->
+                <!-- Info Kontak (Desain Kartu Premium) -->
                 <div class="col-lg-5">
-                    <h3 class="section-title mb-4">Kontak JO.KIDS</h3>
+                    <h2 class="section-title mb-5 display-6">Kontak JO.KIDS</h2>
 
-                    <div class="mb-4">
-                        <h5><i class="fab fa-whatsapp text-success me-2"></i> Bu Faiza (Customer Service)</h5>
-                        <a href="https://wa.me/085608103201" target="_blank" class="fs-4 text-decoration-none">
-                            0856-0810-3201
-                        </a>
+                    <div
+                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-success testimo-card">
+                        <div class="flex-shrink-0">
+                            <i class="fab fa-whatsapp fs-1 text-success"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1 fw-bold text-dark">Bu Faiza (CS)</h5>
+                            <a href="https://wa.me/6285608103201" target="_blank"
+                                class="fs-5 text-muted text-decoration-none fw-medium">
+                                0856-0810-3201
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="mb-4">
-                        <h5><i class="fab fa-whatsapp text-success me-2"></i> Admin</h5>
-                        <a href="https://wa.me/085608867133" target="_blank" class="fs-4 text-decoration-none">
-                            0856-0886-7133
-                        </a>
+                    <div
+                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-success testimo-card">
+                        <div class="flex-shrink-0">
+                            <i class="fab fa-whatsapp fs-1 text-success"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1 fw-bold text-dark">Admin</h5>
+                            <a href="https://wa.me/6285608867133" target="_blank"
+                                class="fs-5 text-muted text-decoration-none fw-medium">
+                                0856-0886-7133
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="mb-4">
-                        <h5><i class="fab fa-instagram me-2"></i> Instagram</h5>
-                        <a href="https://instagram.com/jokids.private" target="_blank"
-                            class="fs-4 text-decoration-none">
-                            @jokids.private
-                        </a>
+                    <div
+                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-pink testimo-card">
+                        <div class="flex-shrink-0">
+                            <i class="fab fa-instagram fs-1 text-pink"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1 fw-bold text-dark">Instagram</h5>
+                            <a href="https://instagram.com/jokids.private" target="_blank"
+                                class="fs-5 text-muted text-decoration-none fw-medium">
+                                @jokids.private
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="mb-4">
-                        <h5><i class="fas fa-envelope me-2"></i> Email</h5>
-                        <a href="mailto:jokidsprivate.id@gmail.com" class="fs-4 text-decoration-none">
-                            jokidsprivate.id@gmail.com
-                        </a>
+                    <div
+                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-warning testimo-card">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-envelope fs-1 text-warning"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1 fw-bold text-dark">Email</h5>
+                            <a href="mailto:jokidsprivate.id@gmail.com"
+                                class="fs-5 text-muted text-decoration-none fw-medium">
+                                jokidsprivate.id@gmail.com
+                            </a>
+                        </div>
                     </div>
 
-                    <div>
-                        <h5><i class="fas fa-map-marker-alt me-2"></i> Alamat</h5>
-                        <p class="fs-5">Bimbingan Belajar JO.KIDS<br>Bojonegoro, Jawa Timur</p>
-                    </div>
-                </div>
-
-                <!-- Form Kontak -->
-                <div class="col-lg-7">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h4 class="mb-4">Kirim Pesan</h4>
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Nama Lengkap</label>
-                                        <input type="text" class="form-control" placeholder="Nama anak/orang tua">
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">No. WhatsApp</label>
-                                        <input type="tel" class="form-control" placeholder="0856xxxxxxxx">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Pesan / Pertanyaan</label>
-                                    <textarea class="form-control" rows="5"
-                                        placeholder="Mau tanya program apa? Atau mau daftar..."></textarea>
-                                </div>
-                                <button type="button"
-                                    onclick="alert('Pesan terkirim! Kami akan balas via WhatsApp ya 👍')"
-                                    class="btn btn-whatsapp btn-lg w-100">
-                                    <i class="fab fa-whatsapp"></i> Kirim Pesan via WhatsApp
-                                </button>
-                            </form>
+                    <div
+                        class="d-flex align-items-center p-3 rounded-4 bg-light border-start border-4 border-purple testimo-card">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-map-marker-alt fs-1 text-purple"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1 fw-bold text-dark">Alamat</h5>
+                            <p class="fs-6 text-muted mb-0">Bimbingan Belajar JO.KIDS<br>Bojonegoro, Jawa Timur</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Google Maps Embed -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm rounded-4 bg-light h-100 p-2 overflow-hidden testimo-card">
+                        <div class="card-body p-0 rounded-3 overflow-hidden h-100 position-relative"
+                            style="min-height: 450px;">
+                            <!-- GANTI LINK SRC DI BAWAH INI DENGAN LINK EMBED GOOGLE MAPS JO.KIDS -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20968039328!2d111.808088!3d-7.151121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7781a78da3c0b1%3A0x4027a76e35326a0!2sBojonegoro%2C%20Bojonegoro%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1714811111111!5m2!1sen!2sid"
+                                width="100%" height="100%" style="border:0; position: absolute; top: 0; left: 0;"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-5 pink-gradient text-white text-center">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-3">Langsung Daftar Sekarang?</h2>
-            <a href="https://wa.me/085608103201" target="_blank" class="btn btn-light btn-lg">
-                <i class="fab fa-whatsapp fs-2"></i> Chat Bu Faiza
+    <!-- CTA - Sesuai Gradasi Desain -->
+    <section class="py-5 text-white text-center" style="background: linear-gradient(135deg, var(--purple), #9d174d);">
+        <div class="container py-4">
+            <h2 class="display-6 fw-bold mb-4 text-white">Langsung Daftar Sekarang?</h2>
+            <a href="https://wa.me/6285608103201" target="_blank"
+                class="btn btn-warning btn-lg rounded-pill fw-bold text-dark d-flex align-items-center justify-content-center gap-2 mx-auto"
+                style="max-width: 250px;">
+                <i class="fab fa-whatsapp fs-4"></i> Chat Bu Faiza
             </a>
         </div>
     </section>
@@ -118,11 +141,11 @@
     <!-- Footer Placeholder -->
     <div id="footer-placeholder" class="mt-auto"></div>
 
-    <!-- Scripts -->
+    <!-- Scripts (Fixed Paths) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/navbar.js"></script>
-    <script src="/assets/js/footer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
 </body>
 
 </html>

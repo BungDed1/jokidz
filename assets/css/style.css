@@ -2,12 +2,14 @@
    JO.KIDS - CSS FINAL (Clean & Organized)
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap');
 
 :root {
     --pink: #db2777;
     --purple: #6d28d9;
-    --dark: #1e2937;
+    --teal: #14b8a6;
+    --dark: #1e293b;
+    --light-bg: #f8fafc;
 }
 
 /* ====================== GLOBAL ====================== */
@@ -18,32 +20,113 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.7;
-    color: #333;
+    color: #334155;
+    background-color: var(--light-bg);
+    /* Set padding 0 di body, biarkan Hero Section yang mengatur jarak aman */
+    padding-top: 0;
 }
 
-/* ====================== NAVBAR ====================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+
+/* Utility Warna Khusus & Badge */
+.text-pink {
+    color: var(--pink) !important;
+}
+
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.bg-pink-light {
+    background-color: rgba(219, 39, 119, 0.1) !important;
+}
+
+.bg-purple-light {
+    background-color: rgba(109, 40, 217, 0.1) !important;
+}
+
+.bg-teal-light {
+    background-color: rgba(20, 184, 166, 0.1) !important;
+}
+
+
+/* ====================== NAVBAR (State Awal: Transparan) ====================== */
 .navbar {
-    padding: 16px 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    padding: 15px 0;
+    /* Ukuran padding dibuat tetap 15px */
+    background-color: transparent !important;
+    box-shadow: none;
+    border-bottom: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
 }
 
 .navbar-brand img {
-    height: 48px;
+    height: 42px;
+    /* Ukuran gambar tetap */
+    object-fit: contain;
 }
 
 .navbar-brand span {
-    font-size: 1.9rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    /* Ukuran teks logo tetap */
+    font-weight: 800;
     letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--dark) !important;
     font-size: 1.05rem;
     padding: 10px 18px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 2px;
+    left: 50%;
+    background: linear-gradient(to right, var(--pink), var(--purple));
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 60%;
 }
 
 .nav-link:hover,
@@ -51,194 +134,406 @@ body {
     color: var(--pink) !important;
 }
 
-/* ====================== HERO ====================== */
-.hero-bg {
-    background: linear-gradient(135deg, #c81e6b, #5b21b6);
-    color: white;
-    padding: 140px 0 120px;
-    position: relative;
+.navbar-toggler i {
+    color: var(--dark);
+    transition: color 0.3s ease;
 }
 
-.hero-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.15);
-    z-index: 1;
+/* ====================== NAVBAR (State Saat Di-Scroll: GRADASI ALA FOOTER) ====================== */
+.navbar.scrolled {
+    padding: 15px 0;
+    /* Ini rahasianya: Gradasi persis seperti footer! */
+    background: linear-gradient(to right, #7e22ce, #be185d) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Menghilangkan border gradasi bawah karena background-nya sudah gradasi */
+    border-image: none;
+    border-bottom: none;
 }
 
-.hero-bg>* {
-    position: relative;
-    z-index: 2;
+/* Teks Logo jadi putih bersih saat di-scroll */
+.navbar.scrolled .navbar-brand span {
+    background: none !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+    font-size: 1.6rem;
 }
 
-.hero-bg h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.15;
-    text-align: left;
+/* Teks Menu jadi putih agak transparan */
+.navbar.scrolled .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
-/* ====================== BUTTONS ====================== */
+/* Teks Menu jadi putih solid saat di-hover/aktif */
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Garis bawah menu saat di-hover menjadi kuning agar kontras dengan gradasi background */
+.navbar.scrolled .nav-link::after {
+    background: #fde047;
+}
+
+/* Icon Hamburger (Mobile) jadi putih */
+.navbar.scrolled .navbar-toggler i {
+    color: #ffffff;
+}
+
+/* ====================== TOMBOL WA DI NAVBAR SAAT DI-SCROLL ====================== */
+/* Tombol diubah menjadi Outline Putih agar elegan di atas background gradasi */
+.navbar.scrolled .btn-whatsapp {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+/* Saat di-hover, tombol WA jadi kuning */
+.navbar.scrolled .btn-whatsapp:hover {
+    background-color: #fde047 !important;
+    border-color: #fde047 !important;
+    color: #1e293b !important;
+    /* Teks jadi gelap agar terbaca jelas di atas kuning */
+}
+
+/* ====================== TOMBOL NAVBAR FIX ====================== */
 .btn-whatsapp {
-    background-color: #fbbf24;
-    color: #1e2937;
-    border: 2px solid #fbbf24;
+    background-color: #10b981;
+    color: #ffffff !important;
+    /* Paksa warna teks jadi putih di awal */
+    border: 2px solid #10b981;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    border-radius: 50px;
-    padding: 7px 18px;
-    font-size: 0.95rem;
+    padding: 8px 24px;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-    background-color: #f59e0b;
+    background-color: #059669;
+    border-color: #059669;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+}
+
+.navbar.scrolled .btn-whatsapp {
+    background-color: #ffffff !important;
+    color: var(--purple) !important;
+    /* Saat scroll, teks tombol WA jadi ungu */
+    border: 2px solid #ffffff !important;
+}
+
+.navbar.scrolled .btn-whatsapp:hover {
+    background-color: #fde047 !important;
+    border-color: #fde047 !important;
+    color: var(--dark) !important;
+}
+
+/* ====================== HERO SECTION (Perbaikan Nabrak) ====================== */
+.hero-bg {
+    background-color: var(--light-bg);
+    position: relative;
+    /* PENTING: Padding 160px ini yang mendorong konten ke bawah agar tidak ditabrak Navbar */
+    padding: 160px 0 100px;
+    overflow: hidden;
+}
+
+.hero-title {
+    color: var(--dark);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800 !important;
+}
+
+.hero-img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* ====================== BUTTONS ====================== */
+.btn-whatsapp {
+    background-color: #10b981;
     color: white;
-    transform: scale(1.05);
+    border: 2px solid #10b981;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #059669;
+    border-color: #059669;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
 }
 
 .btn-outline-primary {
-    background-color: white;
-    color: #f59e0b;
-    border: 2px solid #f59e0b;
-    font-weight: 500;
+    background-color: transparent;
+    color: var(--pink);
+    border: 2px solid var(--pink);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     border-radius: 50px;
-    padding: 7px 22px;
+    padding: 10px 24px;
     transition: all 0.3s ease;
 }
 
 .btn-outline-primary:hover {
-    background-color: #f59e0b;
+    background-color: var(--pink);
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.2);
 }
+
 
 /* ====================== SECTION TITLE ====================== */
 .section-title {
-    color: var(--purple);
-    font-size: 2.1rem;
-    font-weight: 600;
+    color: var(--dark);
+    font-weight: 800;
     position: relative;
     display: inline-block;
+    padding-bottom: 10px;
 }
 
 .section-title:after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 3.5px;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
     background: linear-gradient(to right, var(--pink), var(--purple));
 }
 
-/* ====================== PROGRAM UNGGULAN - RE-DESAIN TOTAL FRESH ====================== */
+
+/* ====================== PROGRAM UNGGULAN ====================== */
 .fresh-program {
     display: flex;
-    gap: 24px;
+    gap: 20px;
     padding: 32px 28px;
     background: white;
     border-radius: 24px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
-    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     align-items: flex-start;
 }
 
 .fresh-program:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 25px 50px rgba(219, 39, 119, 0.18);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .fresh-icon {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     flex-shrink: 0;
-    width: 75px;
+    width: 60px;
+    transition: transform 0.4s ease;
+}
+
+.fresh-program:hover .fresh-icon {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .fresh-program h4 {
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .fresh-program p {
-    font-size: 0.98rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-/* ====================== FOOTER ====================== */
-footer {
-    background: linear-gradient(135deg, #1e2937, #0f172a);
-    color: #e2e8f0;
-    padding: 70px 0 40px;
+
+/* ====================== TESTIMONIAL CARD ====================== */
+.testimo-card {
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-footer a:hover {
-    color: #ec4899;
+.testimo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06) !important;
 }
+
+/* ====================== FOOTER (Professional & Elegant) ====================== */
+.custom-footer {
+    background: linear-gradient(to right, #7e22ce, #be185d);
+    color: #ffffff;
+    padding: 70px 0 0 0;
+    /* Padding bawah kita nol-kan karena sudah diatur oleh .footer-bottom */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Lingkaran raksasa dekoratif di background */
+.custom-footer::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 650px;
+    height: 650px;
+    background: rgba(255, 255, 255, 0.03);
+    /* Transparansi dibuat lebih soft */
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.relative-z-index {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tipografi Judul Menu Footer */
+.custom-footer h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Aksen garis pendek di bawah judul (Kunci tampilan pro) */
+.custom-footer h6::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 3px;
+    background-color: #fde047;
+    /* Warna kuning pastel */
+    border-radius: 2px;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+}
+
+/* Style Link Footer */
+.footer-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
+    /* Efek geser halus saat dihover */
+}
+
+/* Desain Icon Kontak yang Lebih Mewah */
+.footer-contact-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    /* Latar transparan tipis */
+    border-radius: 50%;
+    margin-right: 14px;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat baris kontak di-hover */
+.footer-link:hover .footer-contact-icon {
+    background: #fde047;
+    color: #be185d;
+    transform: scale(1.1);
+}
+
+/* Area Copyright Terpisah (Garis pembatas tipis) */
+.footer-bottom {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    /* Garis batas ala corporate */
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 992px) {
+    .custom-footer h6::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .custom-footer .text-md-end {
+        text-align: center !important;
+    }
+}
+
 
 /* ====================== RESPONSIVE ====================== */
 @media (max-width: 992px) {
-    .hero-bg h1 {
-        font-size: 2.4rem;
+    .hero-title {
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .hero-bg {
-        padding: 100px 0 80px;
+        padding: 140px 0 80px;
+        text-align: center;
     }
-}
 
-/* Utility */
-.bg-light {
-    background-color: #f8f9fa !important;
-}
+    .hero-bg h1 {
+        text-align: center;
+    }
 
-/* ====================== WARNA ICON PROGRAM ====================== */
+    .hero-bg .d-flex.flex-wrap {
+        justify-content: center;
+    }
 
-/* Playgroup - Pink */
-.card:nth-child(1) i {
-    color: #ec4899 !important;
-}
+    .hero-bg .mt-4.d-flex {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px !important;
+    }
 
-/* Calistung + Tahfidz - Ungu */
-.card:nth-child(2) i {
-    color: #6d28d9 !important;
-}
-
-/* English Kids - Teal / Biru Muda */
-.card:nth-child(3) i {
-    color: #14b8a6 !important;
-}
-
-/* Bonus: Icon lebih besar saat hover */
-.card i {
-    transition: all 0.3s ease;
-}
-
-.card:hover i {
-    transform: scale(1.2);
-}
-
-/* ====================== ANIMASI CARD PROGRAM UNGGULAN ====================== */
-.card {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card:hover {
-    transform: translateY(-18px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.card i {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card:hover i {
-    transform: scale(1.2) rotate(8deg);
+    .section-title {
+        font-size: 2rem;
+    }
 }

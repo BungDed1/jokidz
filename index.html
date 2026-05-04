@@ -20,70 +20,74 @@
     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO SECTION - RATA KIRI -->
-    <section class="hero-bg py-5">
+    <!-- HERO SECTION - HAPUS py-5 AGAR TIDAK NABRAK NAVBAR -->
+    <section class="hero-bg">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-3">
+                    <h1 class="display-4 fw-bold mb-3 hero-title">
                         Happy Kids<br>
-                        <span class="text-warning">Fun Learning</span><br>
+                        <span class="text-gradient">Fun Learning</span><br>
                         Clever &amp; Good Attitude
                     </h1>
-                    <p class="lead mb-4">
+                    <p class="lead mb-3 text-secondary">
                         Bimbingan Belajar JO.KIDS Bojonegoro<br>
                         Metode Joyfull Learning
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-5 text-muted">
                         Playgroup • Calistung • Tahsin Qur'an • English Kids • Matematika
                     </p>
 
                     <div class="d-flex flex-wrap gap-3">
                         <a href="https://wa.me/085608103201" target="_blank"
-                            class="btn btn-whatsapp d-flex align-items-center gap-2">
-                            <i class="fab fa-whatsapp"></i>
+                            class="btn btn-whatsapp d-flex align-items-center gap-2 shadow-sm">
+                            <i class="fab fa-whatsapp fs-5"></i>
                             <div>
-                                <strong>Hubungi Bu Faiza</strong><br>
+                                <strong>Hubungi Bu Faiza</strong>
                             </div>
                         </a>
 
-                        <a href="/pages/programs/index.html" class="btn btn-outline-primary">
+                        <a href="pages/programs/index.html" class="btn btn-outline-primary shadow-sm">
                             Lihat Semua Program
                         </a>
                     </div>
 
-                    <div class="mt-4 d-flex gap-4 text-white">
-                        <div><i class="fas fa-check-circle text-warning"></i> Biaya Pendaftaran Rp 75.000</div>
-                        <div><i class="fas fa-check-circle text-warning"></i> Free Alat Tulis</div>
+                    <!-- Info Ekstra - Warna disesuaikan untuk background terang -->
+                    <div class="mt-4 d-flex gap-4 text-dark fw-medium">
+                        <div><i class="fas fa-check-circle text-pink"></i> Biaya Pendaftaran Rp 75.000</div>
+                        <div><i class="fas fa-check-circle text-pink"></i> Free Alat Tulis</div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 text-center">
-                    <img src="https://source.unsplash.com/random/700x600/?happy-kids-classroom" alt="Anak-anak JO.KIDS"
-                        class="img-fluid rounded-4 shadow-lg">
+                    <!-- Tambahkan sedikit efek float pada gambar agar terasa hidup -->
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=700&auto=format&fit=crop"
+                        alt="Anak-anak JO.KIDS" class="img-fluid rounded-4 shadow-lg hero-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROGRAM UNGGULAN - PAKAI BOOTSTRAP CARD -->
+    <!-- PROGRAM UNGGULAN - MENGGUNAKAN CLASS .FRESH-PROGRAM -->
     <section class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title display-5">Program Unggulan JO.KIDS</h2>
-                <p class="lead text-muted">Pilih program yang sesuai usia dan kebutuhan anak Anda</p>
+                <h2 class="section-title display-6">Program Unggulan JO.KIDS</h2>
+                <p class="lead text-muted mt-2">Pilih program yang sesuai usia dan kebutuhan anak Anda</p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 align-items-stretch">
                 <!-- Playgroup -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-baby-carriage fa-3x text-pink mb-4"></i>
-                            <h4 class="card-title">PLAYGROUP</h4>
-                            <p class="text-muted mb-1">Usia 2-3 tahun</p>
-                            <p class="card-text text-muted">
-                                Terapi sensory, motoric play, montessori, dan persiapan calistung
+                    <div class="fresh-program border border-light">
+                        <div class="fresh-icon" style="color: var(--pink);">
+                            <i class="fas fa-baby-carriage"></i>
+                        </div>
+                        <div>
+                            <h4>PLAYGROUP</h4>
+                            <span class="badge bg-pink-light text-pink mb-2">Usia 2-3 tahun</span>
+                            <p class="text-muted mb-0">
+                                Terapi sensory, motoric play, montessori, dan persiapan calistung.
                             </p>
                         </div>
                     </div>
@@ -91,13 +95,15 @@
 
                 <!-- Calistung + Tahfidz -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-book-open fa-3x text-purple mb-4"></i>
-                            <h4 class="card-title">CALISTUNG + TAHFIDZ</h4>
-                            <p class="text-muted mb-1">KB • TK/RA • SD/MI</p>
-                            <p class="card-text text-muted">
-                                Membaca, menulis, berhitung + Tahsin Qur'an
+                    <div class="fresh-program border border-light">
+                        <div class="fresh-icon" style="color: var(--purple);">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div>
+                            <h4>CALISTUNG + TAHFIDZ</h4>
+                            <span class="badge bg-purple-light text-purple mb-2">KB • TK/RA • SD/MI</span>
+                            <p class="text-muted mb-0">
+                                Membaca, menulis, berhitung yang dipadukan dengan Tahsin Qur'an.
                             </p>
                         </div>
                     </div>
@@ -105,13 +111,15 @@
 
                 <!-- English Kids -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-language fa-3x text-teal mb-4"></i>
-                            <h4 class="card-title">ENGLISH KIDS</h4>
-                            <p class="text-muted mb-1">KB • TK/RA • SD/MI</p>
-                            <p class="card-text text-muted">
-                                Speaking, Conversation, Vocabulary &amp; Spelling
+                    <div class="fresh-program border border-light">
+                        <div class="fresh-icon" style="color: var(--teal);">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div>
+                            <h4>ENGLISH KIDS</h4>
+                            <span class="badge bg-teal-light text-teal mb-2">KB • TK/RA • SD/MI</span>
+                            <p class="text-muted mb-0">
+                                Speaking, Conversation, Vocabulary & Spelling bahasa Inggris dasar.
                             </p>
                         </div>
                     </div>
@@ -120,22 +128,26 @@
         </div>
     </section>
 
-    <!-- TESTIMONIAL - BACKGROUND WARNA -->
-    <section class="py-5 testimonial-section">
+    <!-- TESTIMONIAL -->
+    <section class="py-5 testimonial-section bg-light">
         <div class="container">
-            <h2 class="section-title text-center display-5 mb-5">Apa Kata Orang Tua?</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm p-4">
-                        <p class="fst-italic">"Anak saya jadi lebih semangat belajar setelah ikut Playgroup di JO.KIDS.
-                            Terima kasih!"</p>
+            <h2 class="section-title text-center display-6 mb-5">Apa Kata Orang Tua?</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="card h-100 border-0 shadow-sm p-4 testimo-card">
+                        <p class="fst-italic text-muted mb-4">"Anak saya jadi lebih semangat belajar setelah ikut
+                            Playgroup di JO.KIDS. Terima kasih!"</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div class="flex-shrink-0">
-                                <div class="rounded-circle bg-secondary" style="width:50px;height:50px;"></div>
+                                <!-- Placeholder untuk foto testimoni -->
+                                <div class="rounded-circle d-flex justify-content-center align-items-center text-white"
+                                    style="width:50px;height:50px; background: linear-gradient(135deg, var(--pink), var(--purple));">
+                                    <i class="fas fa-user"></i>
+                                </div>
                             </div>
                             <div class="ms-3">
-                                <strong>Weira (Prasekolah)</strong><br>
-                                <small class="text-muted">Program Playgroup</small>
+                                <strong class="text-dark">Weira (Prasekolah)</strong><br>
+                                <small class="text-pink fw-medium">Program Playgroup</small>
                             </div>
                         </div>
                     </div>
@@ -144,17 +156,17 @@
         </div>
     </section>
 
-    <!-- CTA AKHIR - TANPA BACKGROUND WARNA -->
+    <!-- CTA AKHIR -->
     <section class="py-5 bg-white">
-        <div class="container text-center">
-            <h2 class="display-5 fw-bold mb-3 text-dark">Ayo Bergabung dengan JO.KIDS!</h2>
+        <div class="container text-center py-4">
+            <h2 class="display-6 fw-bold mb-3 text-dark">Ayo Bergabung dengan JO.KIDS!</h2>
             <p class="lead mb-4 text-muted">Biaya pendaftaran hanya Rp 75.000/anak • Free alat tulis awal</p>
 
             <a href="https://wa.me/085608103201" target="_blank"
-                class="btn btn-whatsapp btn-md d-inline-flex align-items-center gap-3">
-                <i class="fab fa-whatsapp"></i>
+                class="btn btn-whatsapp btn-lg d-inline-flex align-items-center gap-3 shadow-sm px-4">
+                <i class="fab fa-whatsapp fs-4"></i>
                 <div class="text-start">
-                    <strong>Hubungi Sekarang</strong><br>
+                    <strong class="d-block">Hubungi Sekarang</strong>
                 </div>
             </a>
         </div>
