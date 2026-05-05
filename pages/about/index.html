@@ -20,50 +20,70 @@
     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO ABOUT - Disesuaikan dengan CSS kita (Tanpa py-5, Teks Gelap) -->
-    <section class="hero-bg text-center">
-        <div class="container">
+    <!-- HERO ABOUT - Konsisten dengan desain utama -->
+    <section class="hero-bg position-relative text-center pb-5">
+        <div class="blob-shape blob-1"></div>
+        <div class="blob-shape blob-2"></div>
+        <div class="container position-relative z-1">
+            <span
+                class="badge bg-white text-purple shadow-sm mb-3 px-3 py-2 rounded-pill fw-bold border border-pink-subtle">
+                <i class="fas fa-info-circle text-purple me-1 fs-6 align-middle"></i> Profil Lembaga
+            </span>
             <h1 class="display-4 fw-bold hero-title mb-3">
                 Tentang <span class="text-gradient">JO.KIDS</span>
             </h1>
-            <p class="lead mb-2 text-secondary">
+            <p class="lead mb-2 text-secondary fw-medium">
                 Just For Kids Indonesia • Bimbingan Belajar Bojonegoro
             </p>
-            <p class="fs-5 fw-medium text-dark">
+            <p class="text-dark fw-bold" style="letter-spacing: 0.5px;">
                 Happy Kids • Fun Learning • Clever &amp; Good Attitude
             </p>
         </div>
     </section>
 
     <!-- PROFIL SINGKAT -->
-    <section class="py-5 bg-white">
-        <div class="container">
+    <section class="py-5 bg-white position-relative z-1">
+        <div class="container py-4">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <h2 class="section-title display-6 mb-4">Siapa Kami?</h2>
-                    <p class="lead text-dark">
+                    <p class="lead text-dark fw-medium">
                         JO.KIDS adalah lembaga bimbingan belajar yang fokus pada anak usia dini hingga SD/MI dengan
                         metode <strong class="text-pink">Joyfull Learning</strong>.
                     </p>
-                    <p class="text-muted">
+                    <p class="text-secondary" style="line-height: 1.8;">
                         Kami percaya setiap anak adalah berharga dan punya potensi luar biasa. Melalui pendekatan yang
                         menyenangkan, anak akan belajar dengan senang hati, tumbuh percaya diri, dan siap menghadapi
                         masa depan.
                     </p>
 
-                    <div class="mt-4 p-4 rounded-4 bg-light border-start border-4 border-pink">
-                        <h5 class="text-pink fw-bold">Visi Kami</h5>
-                        <p class="fst-italic text-muted mb-4">"Meningkatkan minat belajar siswa dengan fun learning"</p>
+                    <!-- Visi Misi Box (Premium Gradient Style) -->
+                    <div class="mt-4 p-4 p-md-5 rounded-4 border-0"
+                        style="background: linear-gradient(135deg, rgba(219, 39, 119, 0.05), rgba(109, 40, 217, 0.05)); box-shadow: inset 0 0 0 1px rgba(219, 39, 119, 0.1);">
+                        <div class="mb-4">
+                            <h5 class="text-pink fw-bold d-flex align-items-center gap-2">
+                                <i class="fas fa-eye"></i> Visi Kami
+                            </h5>
+                            <p class="fst-italic text-dark mb-0 fw-medium">"Meningkatkan minat belajar siswa dengan fun
+                                learning."</p>
+                        </div>
 
-                        <h5 class="text-purple fw-bold">Misi Kami</h5>
-                        <p class="fst-italic text-muted mb-0">"Membimbing siswa menjadi anak yang unggul dan berprestasi
-                            secara akademik karena semua anak hebat dengan versinya."</p>
+                        <div>
+                            <h5 class="text-purple fw-bold d-flex align-items-center gap-2">
+                                <i class="fas fa-bullseye"></i> Misi Kami
+                            </h5>
+                            <p class="fst-italic text-dark mb-0 fw-medium">"Membimbing siswa menjadi anak yang unggul
+                                dan berprestasi
+                                secara akademik karena semua anak hebat dengan versinya."</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="img-backdrop"></div>
                     <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop"
-                        alt="Tentang JO.KIDS" class="img-fluid rounded-4 shadow-lg hero-img">
+                        alt="Tentang JO.KIDS"
+                        class="img-fluid rounded-4 shadow-premium position-relative z-1 border border-white border-4">
                 </div>
             </div>
         </div>
@@ -71,65 +91,97 @@
 
     <!-- FASILITAS -->
     <section class="py-5 bg-light">
-        <div class="container">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title display-6">Fasilitas & Keunggulan</h2>
+                <p class="lead text-muted mt-2">Dukungan penuh untuk kenyamanan belajar ananda</p>
             </div>
-            <div class="row g-4">
-                <!-- Gunakan komponen card ringan agar terlihat rapi -->
+            <div class="row g-4 justify-content-center">
+                <!-- Fasilitas 1 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-gift text-pink fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-pink-light text-pink mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-gift"></i>
+                        </div>
                         <strong class="text-dark">Free Alat Tulis Awal Registrasi</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 2 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-book-open text-purple fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-purple-light text-purple mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-book-open"></i>
+                        </div>
                         <strong class="text-dark">Modul pada Program Terpilih</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 3 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-tasks text-teal fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-teal-light text-teal mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-tasks"></i>
+                        </div>
                         <strong class="text-dark">Latihan Soal & Post Test</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 4 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-lightbulb text-warning fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-pink-light text-warning mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
                         <strong class="text-dark">Trik Memahami Materi</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 5 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-chalkboard-teacher text-pink fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-pink-light text-pink mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
                         <strong class="text-dark">Tentor Kompeten & Profesional</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 6 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-shield-alt text-purple fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-purple-light text-purple mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
                         <strong class="text-dark">Tempat Aman & Nyaman</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 7 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-smile-beam text-teal fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-teal-light text-teal mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
                         <strong class="text-dark">Metode Joyfull Learning</strong>
                     </div>
                 </div>
+                <!-- Fasilitas 8 -->
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center">
-                        <i class="fas fa-users text-warning fs-1 mb-3"></i>
+                        class="bg-white p-4 rounded-4 shadow-sm h-100 testimo-card d-flex flex-column align-items-center text-center border border-light">
+                        <div class="bg-pink-light text-warning mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 65px; height: 65px; font-size: 1.6rem;">
+                            <i class="fas fa-users"></i>
+                        </div>
                         <strong class="text-dark">Parenting / Outbound</strong>
                     </div>
                 </div>
@@ -139,34 +191,37 @@
 
     <!-- OPTION CLASS -->
     <section class="py-5 bg-white">
-        <div class="container">
+        <div class="container py-4">
             <h2 class="section-title text-center mb-5 display-6">Pilihan Kelas</h2>
             <div class="row text-center g-4 justify-content-center">
-                <!-- Menggunakan style testimo-card agar ada efek melayang -->
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 shadow-sm testimo-card py-3 border-bottom border-4 border-pink">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border-0 shadow-sm testimo-card py-4 border-bottom border-4 border-pink">
                         <div class="card-body">
+                            <i class="fas fa-users text-pink fs-3 mb-3"></i>
                             <h5 class="fw-bold text-dark mb-0">Reguler</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 shadow-sm testimo-card py-3 border-bottom border-4 border-purple">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border-0 shadow-sm testimo-card py-4 border-bottom border-4 border-purple">
                         <div class="card-body">
+                            <i class="fas fa-user-graduate text-purple fs-3 mb-3"></i>
                             <h5 class="fw-bold text-dark mb-0">Private</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 shadow-sm testimo-card py-3 border-bottom border-4 border-teal">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border-0 shadow-sm testimo-card py-4 border-bottom border-4 border-teal">
                         <div class="card-body">
+                            <i class="fas fa-home text-teal fs-3 mb-3"></i>
                             <h5 class="fw-bold text-dark mb-0">Visit Home</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 shadow-sm testimo-card py-3 border-bottom border-4 border-warning">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border-0 shadow-sm testimo-card py-4 border-bottom border-4 border-warning">
                         <div class="card-body">
+                            <i class="fas fa-laptop text-warning fs-3 mb-3"></i>
                             <h5 class="fw-bold text-dark mb-0">Online</h5>
                         </div>
                     </div>
@@ -180,9 +235,9 @@
 
     <!-- Scripts (Gunakan ../../ agar pathnya benar) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js"></script>
-    <script src="../../assets/js/navbar.js"></script>
-    <script src="../../assets/js/footer.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/footer.js"></script>
 </body>
 
 </html>

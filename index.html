@@ -7,40 +7,42 @@
     <meta name="description" content="JO.KIDS - Bimbingan Belajar Joyfull Learning di Bojonegoro">
     <title>JO.KIDS | Just For Kids Indonesia - Belajar Asyik & Menyenangkan</title>
 
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
-    <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO SECTION - HAPUS py-5 AGAR TIDAK NABRAK NAVBAR -->
-    <section class="hero-bg">
-        <div class="container">
+    <section class="hero-bg position-relative">
+        <div class="blob-shape blob-1"></div>
+        <div class="blob-shape blob-2"></div>
+
+        <div class="container position-relative z-1">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
+                    <span
+                        class="badge bg-white text-pink shadow-sm mb-3 px-3 py-2 rounded-pill fw-bold border border-pink-subtle">
+                        <i class="fas fa-award text-pink me-1 fs-6 align-middle"></i> Bimbingan Belajar Terfavorit
+                    </span>
                     <h1 class="display-4 fw-bold mb-3 hero-title">
                         Happy Kids<br>
                         <span class="text-gradient">Fun Learning</span><br>
                         Clever &amp; Good Attitude
                     </h1>
-                    <p class="lead mb-3 text-secondary">
+                    <p class="lead mb-3 text-secondary fw-medium">
                         Bimbingan Belajar JO.KIDS Bojonegoro<br>
                         Metode Joyfull Learning
                     </p>
-                    <p class="mb-5 text-muted">
+                    <p class="mb-5 text-muted small">
                         Playgroup • Calistung • Tahsin Qur'an • English Kids • Matematika
                     </p>
 
                     <div class="d-flex flex-wrap gap-3">
                         <a href="https://wa.me/085608103201" target="_blank"
-                            class="btn btn-whatsapp d-flex align-items-center gap-2 shadow-sm">
+                            class="btn btn-whatsapp d-flex align-items-center gap-2 shadow">
                             <i class="fab fa-whatsapp fs-5"></i>
                             <div>
                                 <strong>Hubungi Bu Faiza</strong>
@@ -52,40 +54,87 @@
                         </a>
                     </div>
 
-                    <!-- Info Ekstra - Warna disesuaikan untuk background terang -->
-                    <div class="mt-4 d-flex gap-4 text-dark fw-medium">
-                        <div><i class="fas fa-check-circle text-pink"></i> Biaya Pendaftaran Rp 75.000</div>
-                        <div><i class="fas fa-check-circle text-pink"></i> Free Alat Tulis</div>
+                    <div class="mt-4 d-flex flex-wrap gap-3 gap-md-4 text-dark fw-bold">
+                        <div class="d-flex align-items-center gap-2"><i class="fas fa-check-circle text-pink fs-5"></i>
+                            Biaya Pendaftaran Rp 75.000</div>
+                        <div class="d-flex align-items-center gap-2"><i
+                                class="fas fa-check-circle text-purple fs-5"></i> Free Alat Tulis</div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 text-center">
-                    <!-- Tambahkan sedikit efek float pada gambar agar terasa hidup -->
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=700&auto=format&fit=crop"
-                        alt="Anak-anak JO.KIDS" class="img-fluid rounded-4 shadow-lg hero-img">
+                <div class="col-lg-6 position-relative">
+                    <div class="img-backdrop" style="opacity: 0.6; transform: scale(1.05);"></div>
+
+                    <div class="row g-3 position-relative z-1 px-3 px-md-4">
+
+                        <div class="col-6">
+                            <div class="bg-white p-3 p-md-4 rounded-4 shadow text-center hero-img d-flex flex-column justify-content-center border-bottom border-4 border-pink"
+                                style="aspect-ratio: 1/1;">
+                                <div class="bg-pink-light text-pink rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 mb-md-3"
+                                    style="width: 60px; height: 60px; font-size: 1.8rem;">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-0 fs-6">Cerdas</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6" style="transform: translateY(30px);">
+                            <div class="bg-white p-3 p-md-4 rounded-4 shadow text-center hero-img d-flex flex-column justify-content-center border-bottom border-4 border-purple"
+                                style="aspect-ratio: 1/1; animation-delay: 0.3s;">
+                                <div class="bg-purple-light text-purple rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 mb-md-3"
+                                    style="width: 60px; height: 60px; font-size: 1.8rem;">
+                                    <i class="fas fa-smile-beam"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-0 fs-6">Ceria</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="bg-white p-3 p-md-4 rounded-4 shadow text-center hero-img d-flex flex-column justify-content-center border-bottom border-4 border-teal"
+                                style="aspect-ratio: 1/1; animation-delay: 0.6s;">
+                                <div class="bg-teal-light text-teal rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 mb-md-3"
+                                    style="width: 60px; height: 60px; font-size: 1.8rem;">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-0 fs-6">Berprestasi</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6" style="transform: translateY(30px);">
+                            <div class="bg-white p-3 p-md-4 rounded-4 shadow text-center hero-img d-flex flex-column justify-content-center border-bottom border-4 border-warning"
+                                style="aspect-ratio: 1/1; animation-delay: 0.9s;">
+                                <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 mb-md-3"
+                                    style="width: 60px; height: 60px; font-size: 1.8rem;">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-0 fs-6">Karakter Baik</h5>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROGRAM UNGGULAN - MENGGUNAKAN CLASS .FRESH-PROGRAM -->
-    <section class="py-5 bg-white">
-        <div class="container">
+    <section class="py-5 bg-white position-relative">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="section-title display-6">Program Unggulan JO.KIDS</h2>
                 <p class="lead text-muted mt-2">Pilih program yang sesuai usia dan kebutuhan anak Anda</p>
             </div>
 
             <div class="row g-4 align-items-stretch">
-                <!-- Playgroup -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="fresh-program border border-light">
-                        <div class="fresh-icon" style="color: var(--pink);">
+                    <div class="fresh-program card-pink">
+                        <div class="fresh-icon bg-pink-light rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; color: var(--pink);">
                             <i class="fas fa-baby-carriage"></i>
                         </div>
                         <div>
                             <h4>PLAYGROUP</h4>
-                            <span class="badge bg-pink-light text-pink mb-2">Usia 2-3 tahun</span>
+                            <span class="badge bg-pink text-white mb-2 shadow-sm rounded-pill px-3">Usia 2-3
+                                tahun</span>
                             <p class="text-muted mb-0">
                                 Terapi sensory, motoric play, montessori, dan persiapan calistung.
                             </p>
@@ -93,15 +142,16 @@
                     </div>
                 </div>
 
-                <!-- Calistung + Tahfidz -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="fresh-program border border-light">
-                        <div class="fresh-icon" style="color: var(--purple);">
+                    <div class="fresh-program card-purple">
+                        <div class="fresh-icon bg-purple-light rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; color: var(--purple);">
                             <i class="fas fa-book-open"></i>
                         </div>
                         <div>
                             <h4>CALISTUNG + TAHFIDZ</h4>
-                            <span class="badge bg-purple-light text-purple mb-2">KB • TK/RA • SD/MI</span>
+                            <span class="badge bg-purple text-white mb-2 shadow-sm rounded-pill px-3">KB • TK/RA •
+                                SD/MI</span>
                             <p class="text-muted mb-0">
                                 Membaca, menulis, berhitung yang dipadukan dengan Tahsin Qur'an.
                             </p>
@@ -109,15 +159,16 @@
                     </div>
                 </div>
 
-                <!-- English Kids -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="fresh-program border border-light">
-                        <div class="fresh-icon" style="color: var(--teal);">
+                    <div class="fresh-program card-teal">
+                        <div class="fresh-icon bg-teal-light rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; color: var(--teal);">
                             <i class="fas fa-language"></i>
                         </div>
                         <div>
                             <h4>ENGLISH KIDS</h4>
-                            <span class="badge bg-teal-light text-teal mb-2">KB • TK/RA • SD/MI</span>
+                            <span class="badge bg-teal text-white mb-2 shadow-sm rounded-pill px-3">KB • TK/RA •
+                                SD/MI</span>
                             <p class="text-muted mb-0">
                                 Speaking, Conversation, Vocabulary & Spelling bahasa Inggris dasar.
                             </p>
@@ -128,51 +179,71 @@
         </div>
     </section>
 
-    <!-- TESTIMONIAL -->
-    <section class="py-5 testimonial-section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center display-6 mb-5">Apa Kata Orang Tua?</h2>
+    <section class="py-5 bg-light position-relative">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-6">Kenapa Memilih JO.KIDS?</h2>
+                <p class="lead text-muted mt-2">Fasilitas dan metode terbaik untuk mendukung tumbuh kembang ananda</p>
+            </div>
+
             <div class="row g-4 justify-content-center">
-                <div class="col-md-5">
-                    <div class="card h-100 border-0 shadow-sm p-4 testimo-card">
-                        <p class="fst-italic text-muted mb-4">"Anak saya jadi lebih semangat belajar setelah ikut
-                            Playgroup di JO.KIDS. Terima kasih!"</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <div class="flex-shrink-0">
-                                <!-- Placeholder untuk foto testimoni -->
-                                <div class="rounded-circle d-flex justify-content-center align-items-center text-white"
-                                    style="width:50px;height:50px; background: linear-gradient(135deg, var(--pink), var(--purple));">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                            </div>
-                            <div class="ms-3">
-                                <strong class="text-dark">Weira (Prasekolah)</strong><br>
-                                <small class="text-pink fw-medium">Program Playgroup</small>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white p-4 rounded-4 shadow-sm text-center border border-light">
+                        <div class="icon-box-feature bg-pink-light text-pink mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 70px; height: 70px; font-size: 2rem;">
+                            <i class="fas fa-laugh-beam"></i>
                         </div>
+                        <h5 class="fw-bold text-dark mb-3">Metode Joyfull Learning</h5>
+                        <p class="text-muted small mb-0" style="line-height: 1.6;">Belajar sambil bermain yang
+                            menyenangkan, membuat anak merasa nyaman, tidak terbebani, dan anti-bosan di kelas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white p-4 rounded-4 shadow-sm text-center border border-light">
+                        <div class="icon-box-feature bg-purple-light text-purple mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 70px; height: 70px; font-size: 2rem;">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">Tutor Sabar & Ramah</h5>
+                        <p class="text-muted small mb-0" style="line-height: 1.6;">Dibimbing langsung oleh tentor
+                            berpengalaman yang penuh perhatian serta memahami karakteristik dan psikologi anak.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white p-4 rounded-4 shadow-sm text-center border border-light">
+                        <div class="icon-box-feature bg-teal-light text-teal mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 70px; height: 70px; font-size: 2rem;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">Laporan Perkembangan</h5>
+                        <p class="text-muted small mb-0" style="line-height: 1.6;">Orang tua akan mendapatkan evaluasi
+                            rutin mengenai progres akademik dan perkembangan sikap ananda secara transparan.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA AKHIR -->
     <section class="py-5 bg-white">
-        <div class="container text-center py-4">
-            <h2 class="display-6 fw-bold mb-3 text-dark">Ayo Bergabung dengan JO.KIDS!</h2>
-            <p class="lead mb-4 text-muted">Biaya pendaftaran hanya Rp 75.000/anak • Free alat tulis awal</p>
+        <div class="container">
+            <div class="cta-box text-center py-5 px-4 rounded-5 shadow-lg position-relative overflow-hidden">
+                <div class="position-relative z-1">
+                    <h2 class="display-6 fw-bold mb-3 text-dark">Ayo Bergabung dengan JO.KIDS!</h2>
+                    <p class="lead mb-4 text-dark opacity-75">Biaya pendaftaran hanya <strong>Rp 75.000/anak</strong> •
+                        Free alat tulis awal</p>
 
-            <a href="https://wa.me/085608103201" target="_blank"
-                class="btn btn-whatsapp btn-lg d-inline-flex align-items-center gap-3 shadow-sm px-4">
-                <i class="fab fa-whatsapp fs-4"></i>
-                <div class="text-start">
-                    <strong class="d-block">Hubungi Sekarang</strong>
+                    <a href="https://wa.me/085608103201" target="_blank"
+                        class="btn btn-whatsapp btn-lg d-inline-flex align-items-center gap-3 shadow px-4 py-3 rounded-pill">
+                        <i class="fab fa-whatsapp fs-3"></i>
+                        <div class="text-start">
+                            <strong class="d-block fs-5">Hubungi Bu Faiza Sekarang</strong>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Placeholder -->
     <div id="footer-placeholder" class="mt-auto"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

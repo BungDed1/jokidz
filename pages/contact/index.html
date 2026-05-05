@@ -20,99 +20,129 @@
     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO CONTACT -->
-    <section class="hero-bg text-center pb-4">
-        <div class="container">
-            <h1 class="display-4 fw-bold hero-title mb-3">
+    <!-- HERO CONTACT - Dirampingkan -->
+    <section class="hero-bg position-relative text-center pb-4">
+        <div class="blob-shape blob-1"></div>
+        <div class="blob-shape blob-2"></div>
+        <div class="container position-relative z-1">
+            <h1 class="display-5 fw-bold hero-title mb-2">
                 Hubungi <span class="text-gradient">Kami</span>
             </h1>
-            <p class="lead text-secondary mb-0">Siap membantu pertanyaan dan pendaftaran anak Anda</p>
+            <p class="lead text-secondary fw-medium mb-0" style="font-size: 1.05rem;">Pilih jalur komunikasi yang paling
+                nyaman untuk Anda</p>
         </div>
     </section>
 
     <!-- KONTEN UTAMA: INFO & MAPS -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="row g-5 align-items-stretch">
+    <section class="py-5 bg-white position-relative z-1">
+        <div class="container py-2">
+            <div class="row g-4 align-items-stretch">
 
-                <!-- Info Kontak (Desain Kartu Premium) -->
-                <div class="col-lg-5">
-                    <h2 class="section-title mb-5 display-6">Kontak JO.KIDS</h2>
+                <!-- KIRI: Info Kontak (Compact Grid Layout) -->
+                <div class="col-lg-5 d-flex flex-column">
+                    <div class="mb-4">
+                        <h2 class="section-title h3 mb-2">Kontak JO.KIDS</h2>
+                    </div>
 
-                    <div
-                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-success testimo-card">
-                        <div class="flex-shrink-0">
-                            <i class="fab fa-whatsapp fs-1 text-success"></i>
+                    <!-- Grid 2x2 untuk Kontak -->
+                    <div class="row g-3 mb-4">
+                        <!-- CS Bu Faiza -->
+                        <div class="col-sm-6">
+                            <div
+                                class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm border border-light feature-card h-100">
+                                <div class="bg-success bg-opacity-10 text-success flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                                    style="width: 45px; height: 45px; font-size: 1.2rem;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.9rem;">Bu Faiza (CS)</h6>
+                                    <a href="https://wa.me/6285608103201" target="_blank"
+                                        class="text-muted text-decoration-none fw-medium stretched-link"
+                                        style="font-size: 0.85rem;">
+                                        0856-0810-3201
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ms-4">
-                            <h5 class="mb-1 fw-bold text-dark">Bu Faiza (CS)</h5>
-                            <a href="https://wa.me/6285608103201" target="_blank"
-                                class="fs-5 text-muted text-decoration-none fw-medium">
-                                0856-0810-3201
-                            </a>
+
+                        <!-- Admin -->
+                        <div class="col-sm-6">
+                            <div
+                                class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm border border-light feature-card h-100">
+                                <div class="bg-success bg-opacity-10 text-success flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                                    style="width: 45px; height: 45px; font-size: 1.2rem;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.9rem;">Admin Utama</h6>
+                                    <a href="https://wa.me/6285608867133" target="_blank"
+                                        class="text-muted text-decoration-none fw-medium stretched-link"
+                                        style="font-size: 0.85rem;">
+                                        0856-0886-7133
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="col-sm-6">
+                            <div
+                                class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm border border-light feature-card h-100">
+                                <div class="bg-pink-light text-pink flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                                    style="width: 45px; height: 45px; font-size: 1.2rem;">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.9rem;">Instagram</h6>
+                                    <a href="https://instagram.com/jokids.private" target="_blank"
+                                        class="text-muted text-decoration-none fw-medium stretched-link"
+                                        style="font-size: 0.85rem;">
+                                        @jokids.private
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-sm-6">
+                            <div
+                                class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm border border-light feature-card h-100">
+                                <div class="bg-warning bg-opacity-10 text-warning flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                                    style="width: 45px; height: 45px; font-size: 1.2rem;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.9rem;">Email</h6>
+                                    <a href="mailto:jokidsprivate.id@gmail.com"
+                                        class="text-muted text-decoration-none fw-medium stretched-link text-truncate d-block"
+                                        style="font-size: 0.85rem; max-width: 120px;">
+                                        jokidsprivate...
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Alamat Lokasi (Full Width) -->
                     <div
-                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-success testimo-card">
-                        <div class="flex-shrink-0">
-                            <i class="fab fa-whatsapp fs-1 text-success"></i>
+                        class="mt-auto d-flex align-items-start p-4 rounded-4 bg-light border border-light shadow-sm feature-card">
+                        <div class="text-purple flex-shrink-0 mt-1" style="font-size: 1.8rem;">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="ms-4">
-                            <h5 class="mb-1 fw-bold text-dark">Admin</h5>
-                            <a href="https://wa.me/6285608867133" target="_blank"
-                                class="fs-5 text-muted text-decoration-none fw-medium">
-                                0856-0886-7133
-                            </a>
-                        </div>
-                    </div>
-
-                    <div
-                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-pink testimo-card">
-                        <div class="flex-shrink-0">
-                            <i class="fab fa-instagram fs-1 text-pink"></i>
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-1 fw-bold text-dark">Instagram</h5>
-                            <a href="https://instagram.com/jokids.private" target="_blank"
-                                class="fs-5 text-muted text-decoration-none fw-medium">
-                                @jokids.private
-                            </a>
-                        </div>
-                    </div>
-
-                    <div
-                        class="d-flex align-items-center mb-4 p-3 rounded-4 bg-light border-start border-4 border-warning testimo-card">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-envelope fs-1 text-warning"></i>
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-1 fw-bold text-dark">Email</h5>
-                            <a href="mailto:jokidsprivate.id@gmail.com"
-                                class="fs-5 text-muted text-decoration-none fw-medium">
-                                jokidsprivate.id@gmail.com
-                            </a>
-                        </div>
-                    </div>
-
-                    <div
-                        class="d-flex align-items-center p-3 rounded-4 bg-light border-start border-4 border-purple testimo-card">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-map-marker-alt fs-1 text-purple"></i>
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-1 fw-bold text-dark">Alamat</h5>
-                            <p class="fs-6 text-muted mb-0">Bimbingan Belajar JO.KIDS<br>Bojonegoro, Jawa Timur</p>
+                            <h6 class="mb-1 fw-bold text-dark">Lokasi Belajar</h6>
+                            <p class="text-muted small mb-0" style="line-height: 1.6;">Bimbingan Belajar
+                                JO.KIDS<br>Bojonegoro, Jawa Timur</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Google Maps Embed -->
+                <!-- KANAN: Google Maps Embed -->
                 <div class="col-lg-7">
-                    <div class="card border-0 shadow-sm rounded-4 bg-light h-100 p-2 overflow-hidden testimo-card">
-                        <div class="card-body p-0 rounded-3 overflow-hidden h-100 position-relative"
-                            style="min-height: 450px;">
-                            <!-- GANTI LINK SRC DI BAWAH INI DENGAN LINK EMBED GOOGLE MAPS JO.KIDS -->
+                    <!-- min-height dikurangi menjadi 350px agar sejajar dengan tinggi kolom kiri -->
+                    <div class="card border-0 shadow-sm rounded-4 bg-white h-100 p-2 overflow-hidden"
+                        style="min-height: 350px;">
+                        <div class="card-body p-0 rounded-3 overflow-hidden h-100 position-relative">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20968039328!2d111.808088!3d-7.151121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7781a78da3c0b1%3A0x4027a76e35326a0!2sBojonegoro%2C%20Bojonegoro%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1714811111111!5m2!1sen!2sid"
                                 width="100%" height="100%" style="border:0; position: absolute; top: 0; left: 0;"

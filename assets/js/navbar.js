@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li class="nav-item"><a class="nav-link" href="/pages/about/index.html">Tentang Kami</a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/programs/index.html">Program</a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/gallery/index.html">Galeri</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/pages/testimonial/index.html">Testimoni</a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/contact/index.html">Kontak</a></li>
                     </ul>
                     
