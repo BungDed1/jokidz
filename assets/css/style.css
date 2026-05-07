@@ -751,3 +751,45 @@ h6 {
 .testimo-card h5 {
     font-size: 1rem !important;
 }
+
+/* =========================================================================
+   PERBAIKAN FOOTER & MENU MOBILE (RATA TENGAH SEMPURNA)
+   ========================================================================= */
+@media (max-width: 991.98px) {
+
+    /* 1. Memaksa area Footer rata tengah */
+    .custom-footer {
+        text-align: center !important;
+    }
+
+    /* 2. Memastikan garis kuning di bawah judul menu ikut ke tengah */
+    .custom-footer h6::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* 3. Mendorong Ikon & Teks Kontak (WA, IG, Email) ke tengah */
+    .custom-footer .footer-link,
+    .custom-footer .d-flex,
+    .navbar-collapse .d-flex,
+    .navbar-collapse .footer-link {
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* 4. Menyesuaikan jarak ikon saat posisinya di tengah agar seimbang */
+    .custom-footer .footer-contact-icon,
+    .navbar-collapse .footer-contact-icon {
+        margin-right: 12px !important;
+    }
+
+    /* 5. Merapikan bungkus list/daftar jika ada */
+    .custom-footer ul,
+    .navbar-collapse ul {
+        padding-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
