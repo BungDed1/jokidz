@@ -7,20 +7,16 @@
     <meta name="description" content="Galeri Kegiatan JO.KIDS - Anak-anak belajar sambil bermain">
     <title>Galeri JO.KIDS | Moment Bahagia Anak</title>
 
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS (Fixed Path) -->
-    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
-    <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO GALLERY - Konsisten dengan desain utama -->
     <section class="hero-bg position-relative text-center pb-5">
         <div class="blob-shape blob-1"></div>
         <div class="blob-shape blob-2"></div>
@@ -32,110 +28,170 @@
             <h1 class="display-4 fw-bold hero-title mb-3">
                 Galeri <span class="text-gradient">JO.KIDS</span>
             </h1>
-            <p class="lead text-secondary fw-medium mb-2">Happy Kids • Fun Learning • Moment Bahagia Belajar</p>
+            <p class="lead text-secondary fw-medium mb-2">Moment Bahagia Kegiatan Pendukung JO.KIDS</p>
         </div>
     </section>
 
-    <!-- GALLERY GRID -->
     <section class="py-5 bg-white position-relative z-1">
-        <div class="container py-4">
-            <div class="row g-4 justify-content-center">
+        <div class="container py-2">
 
-                <!-- Foto 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/playgroub.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="Playgroup Sensory Play" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-pink-light text-pink rounded-pill mb-2">Playgroup</span>
-                            <h6 class="fw-bold text-dark mb-0">Sensory Play</h6>
-                        </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                <button class="filter-btn active" data-filter="all">Semua Kegiatan</button>
+                <button class="filter-btn" data-filter="cfd">CFD</button>
+                <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+                <button class="filter-btn" data-filter="holiday">Holiday Fun</button>
+                <button class="filter-btn" data-filter="halalbihalal">Halal Bi Halal</button>
+                <button class="filter-btn" data-filter="tentor">Upgrading Tentor</button>
+            </div>
+
+            <div class="masonry-container">
+
+                <div class="masonry-item" data-category="cfd" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/CFD/1.jpeg" data-caption="Keseruan Kegiatan CFD JO.KIDS">
+                    <img src="/public/CFD/1.jpeg" alt="CFD 1">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-teal mb-2">CFD</span>
+                        <h6 class="text-white mb-0 fw-bold">Keseruan Kegiatan CFD JO.KIDS</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="cfd" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/CFD/2.jpeg" data-caption="Momen Ceria di Car Free Day">
+                    <img src="/public/CFD/2.jpeg" alt="CFD 2">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-teal mb-2">CFD</span>
+                        <h6 class="text-white mb-0 fw-bold">Momen Ceria di Car Free Day</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="cfd" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/CFD/3.jpeg" data-caption="Aktivitas Seru Bersama JO.KIDS">
+                    <img src="/public/CFD/3.jpeg" alt="CFD 3">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-teal mb-2">CFD</span>
+                        <h6 class="text-white mb-0 fw-bold">Aktivitas Seru Bersama JO.KIDS</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="cfd" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/CFD/4.jpeg" data-caption="Keceriaan Anak-Anak di Area CFD">
+                    <img src="/public/CFD/4.jpeg" alt="CFD 4">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-teal mb-2">CFD</span>
+                        <h6 class="text-white mb-0 fw-bold">Keceriaan Anak-Anak di Area CFD</h6>
                     </div>
                 </div>
 
-                <!-- Foto 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/calistung.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="Calistung Membaca" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-purple-light text-purple rounded-pill mb-2">Calistung</span>
-                            <h6 class="fw-bold text-dark mb-0">Membaca</h6>
-                        </div>
+                <div class="masonry-item" data-category="anniversary" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/ANNIVERSARY/1.jpeg" data-caption="Kemeriahan Anniversary JO.KIDS">
+                    <img src="/public/ANNIVERSARY/1.jpeg" alt="Anniv 1">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-pink mb-2">Anniversary</span>
+                        <h6 class="text-white mb-0 fw-bold">Kemeriahan Anniversary JO.KIDS</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="anniversary" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/ANNIVERSARY/2.jpeg" data-caption="Momen Bahagia Ulang Tahun JO.KIDS">
+                    <img src="/public/ANNIVERSARY/2.jpeg" alt="Anniv 2">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-pink mb-2">Anniversary</span>
+                        <h6 class="text-white mb-0 fw-bold">Momen Bahagia Ulang Tahun JO.KIDS</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="anniversary" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/ANNIVERSARY/3.jpeg" data-caption="Keseruan Perayaan Anniversary Bersama">
+                    <img src="/public/ANNIVERSARY/3.jpeg" alt="Anniv 3">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-pink mb-2">Anniversary</span>
+                        <h6 class="text-white mb-0 fw-bold">Keseruan Perayaan Anniversary Bersama</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="anniversary" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/ANNIVERSARY/4.jpeg" data-caption="Kebersamaan di Hari Spesial JO.KIDS">
+                    <img src="/public/ANNIVERSARY/4.jpeg" alt="Anniv 4">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-pink mb-2">Anniversary</span>
+                        <h6 class="text-white mb-0 fw-bold">Kebersamaan di Hari Spesial JO.KIDS</h6>
                     </div>
                 </div>
 
-                <!-- Foto 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/englishkids.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="English Kids" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-teal-light text-teal rounded-pill mb-2">English Kids</span>
-                            <h6 class="fw-bold text-dark mb-0">Speaking Fun</h6>
-                        </div>
+                <div class="masonry-item" data-category="holiday" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/HOLIDAY FUN ACTIVITY/1.jpeg" data-caption="Keseruan Holiday Fun Activity">
+                    <img src="/public/HOLIDAY FUN ACTIVITY/1.jpeg" alt="Holiday 1">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-warning text-dark mb-2">Holiday Fun</span>
+                        <h6 class="text-white mb-0 fw-bold">Keseruan Holiday Fun Activity</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="holiday" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/HOLIDAY FUN ACTIVITY/2.jpeg" data-caption="Momen Ceria Mengisi Liburan">
+                    <img src="/public/HOLIDAY FUN ACTIVITY/2.jpeg" alt="Holiday 2">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-warning text-dark mb-2">Holiday Fun</span>
+                        <h6 class="text-white mb-0 fw-bold">Momen Ceria Mengisi Liburan</h6>
                     </div>
                 </div>
 
-                <!-- Foto 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/matematika.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="Matematika" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-pink-light text-pink rounded-pill mb-2">Matematika</span>
-                            <h6 class="fw-bold text-dark mb-0">Fun Learning</h6>
-                        </div>
+                <div class="masonry-item" data-category="halalbihalal" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/1.jpeg"
+                    data-caption="Momen Halal Bi Halal Keluarga Besar JO.KIDS">
+                    <img src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/1.jpeg" alt="Agama 1">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-purple mb-2">Halal Bi Halal</span>
+                        <h6 class="text-white mb-0 fw-bold">Momen Halal Bi Halal Keluarga Besar</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="halalbihalal" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/2.jpeg" data-caption="Keseruan Kegiatan Keagamaan JO.KIDS">
+                    <img src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/2.jpeg" alt="Agama 2">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-purple mb-2">Lomba Keagamaan</span>
+                        <h6 class="text-white mb-0 fw-bold">Keseruan Kegiatan Keagamaan</h6>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="halalbihalal" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/3.jpeg" data-caption="Kebersamaan Penuh Berkah di JO.KIDS">
+                    <img src="/public/HALAL BI HALAL DAN LOMBA KEAGAMAAN/3.jpeg" alt="Agama 3">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-purple mb-2">Lomba Keagamaan</span>
+                        <h6 class="text-white mb-0 fw-bold">Kebersamaan Penuh Berkah</h6>
                     </div>
                 </div>
 
-                <!-- Foto 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/tahfiz.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="Tahfidz Qur'an" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-purple-light text-purple rounded-pill mb-2">Tahfidz</span>
-                            <h6 class="fw-bold text-dark mb-0">Hafalan Bersama</h6>
-                        </div>
+                <div class="masonry-item" data-category="tentor" data-bs-toggle="modal" data-bs-target="#imgModal"
+                    data-src="/public/UPGRADING TENTOR/1.jpeg" data-caption="Kegiatan Upgrading Tentor JO.KIDS">
+                    <img src="/public/UPGRADING TENTOR/1.jpeg" alt="Tentor 1">
+                    <div class="masonry-overlay">
+                        <span class="badge bg-dark mb-2">Tentor</span>
+                        <h6 class="text-white mb-0 fw-bold">Kegiatan Upgrading Tentor JO.KIDS</h6>
                     </div>
                 </div>
 
-                <!-- Foto 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100 feature-card rounded-4 overflow-hidden bg-white p-2">
-                        <div class="position-relative overflow-hidden rounded-3" style="height: 250px;">
-                            <img src="/public/outbound.jpg" class="w-100 h-100 object-fit-cover transition-transform"
-                                alt="Kegiatan Kreatif" style="transition: transform 0.5s ease;">
-                        </div>
-                        <div class="card-body p-3 text-center">
-                            <span class="badge bg-teal-light text-teal rounded-pill mb-2">Outbound</span>
-                            <h6 class="fw-bold text-dark mb-0">Kegiatan Kreatif</h6>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Placeholder -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img id="modalImage" src="" class="img-fluid rounded-3 shadow-lg"
+                        style="max-height: 85vh; background-color:#000;" alt="Dokumentasi JO.KIDS">
+                    <h5 id="modalCaption" class="text-white mt-3 fw-bold"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="footer-placeholder" class="mt-auto"></div>
 
-    <!-- Scripts (Fixed Paths) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/footer.js"></script>
+
 </body>
 
 </html>

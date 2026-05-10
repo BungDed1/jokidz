@@ -81,3 +81,52 @@ function submitReview() {
         window.open(waURL, '_blank');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // 1. LOGIKA FILTER MASONRY GALLERY
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const masonryItems = document.querySelectorAll('.masonry-item');
+
+    if (filterBtns.length > 0 && masonryItems.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Hapus class 'active' dari semua tombol
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Tambahkan 'active' ke tombol yang di-klik
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                masonryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        // Efek fade-in sederhana
+                        item.style.opacity = '0';
+                        setTimeout(() => { item.style.opacity = '1'; }, 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    // 2. LOGIKA LIGHTBOX MODAL (Gallery)
+    const galleryItems = document.querySelectorAll('.masonry-item');
+    const modalImage = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    if (galleryItems.length > 0 && modalImage && modalCaption) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const src = this.getAttribute('data-src');
+                const caption = this.getAttribute('data-caption');
+
+                modalImage.src = src;
+                modalCaption.innerText = caption;
+            });
+        });
+    }
+
+});

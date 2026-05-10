@@ -7,217 +7,295 @@
     <meta name="description"
         content="Program Bimbel JO.KIDS - Playgroup, Calistung, Tahsin Qur'an, English Kids, Matematika">
     <title>Program JO.KIDS | Harga & Jadwal Bimbingan Belajar</title>
-
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS (Fixed Path) -->
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
-    <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HERO PROGRAMS - Konsisten dengan desain Premium -->
     <section class="hero-bg position-relative text-center pb-5">
         <div class="blob-shape blob-1"></div>
         <div class="blob-shape blob-2"></div>
         <div class="container position-relative z-1">
             <span
                 class="badge bg-white text-teal shadow-sm mb-3 px-3 py-2 rounded-pill fw-bold border border-pink-subtle">
-                <i class="fas fa-layer-group text-teal me-1 fs-6 align-middle"></i> Pilihan Kelas
+                <i class="fas fa-layer-group text-teal me-1 fs-6 align-middle"></i> 6 Pilihan Kelas
             </span>
             <h1 class="display-4 fw-bold hero-title mb-3">
                 Program <span class="text-gradient">Bimbingan Belajar</span>
             </h1>
             <p class="lead text-secondary fw-medium mb-2">JO.KIDS Just For Kids Indonesia • Bojonegoro</p>
-            <p class="text-dark fw-bold" style="letter-spacing: 0.5px;">Metode Joyfull Learning • Happy Kids • Fun
-                Learning</p>
+            <p class="text-dark fw-bold" style="letter-spacing: 0.5px;">Opsi Kelas: Reguler • Private • Visit Home •
+                Online</p>
         </div>
     </section>
 
-    <!-- DAFTAR PROGRAM -->
     <section class="py-5 bg-white position-relative z-1">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title display-6">Pilih Program Sesuai Usia Anak Anda</h2>
+                <h2 class="section-title display-6">Pilih Program Sesuai Kebutuhan Anak</h2>
             </div>
 
             <div class="row g-4 align-items-stretch justify-content-center">
-                <!-- Playgroup -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center position-relative overflow-hidden"
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
                         style="border-bottom: 5px solid var(--pink) !important;">
-                        <div class="icon-box-feature bg-pink-light text-pink mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                        <div
+                            class="icon-box-feature bg-pink-light text-pink mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
                             <i class="fas fa-baby-carriage"></i>
                         </div>
                         <h4 class="fw-bold text-dark mb-1">PLAYGROUP</h4>
-                        <span class="badge bg-pink text-white mb-4 shadow-sm rounded-pill px-3 py-2">Usia 2-3 Tahun
-                            (Worksheet)</span>
-
-                        <ul class="list-unstyled text-start text-secondary small" style="line-height: 1.8;">
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-pink mt-1 fs-5"></i>
-                                <span>Terapi sensory & motoric play</span>
+                        <span class="badge bg-pink text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">Usia 2-3
+                            Tahun (Worksheet)</span>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Terapi stimulasi sensory
+                                    lengkap</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Motoric play (halus &
+                                    kasar)</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Bermain peran / kognitif</span>
                             </li>
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-pink mt-1 fs-5"></i>
-                                <span>Montessori pra-calistung</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-start gap-3">
-                                <i class="fas fa-check-circle text-pink mt-1 fs-5"></i>
-                                <span>Bermain peran & kognitif</span>
-                            </li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Montessori & Early stages of
+                                    writing</span></li>
                         </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalPlaygroup"><i class="fas fa-images me-1"></i> Lihat
+                            Dokumentasi</button>
                     </div>
                 </div>
 
-                <!-- Calistung + Tahfidz -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center position-relative overflow-hidden"
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
                         style="border-bottom: 5px solid var(--purple) !important;">
-                        <div class="icon-box-feature bg-purple-light text-purple mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                        <div
+                            class="icon-box-feature bg-purple-light text-purple mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
                             <i class="fas fa-book-open"></i>
                         </div>
-                        <h4 class="fw-bold text-dark mb-1">CALISTUNG + TAHFIDZ</h4>
-                        <span class="badge bg-purple text-white mb-4 shadow-sm rounded-pill px-3 py-2">KB • TK/RA •
-                            SD/MI</span>
-
-                        <ul class="list-unstyled text-start text-secondary small" style="line-height: 1.8;">
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-purple mt-1 fs-5"></i>
-                                <span>Membaca, Menulis, Berhitung</span>
+                        <h4 class="fw-bold text-dark mb-1">CALISTUNG</h4>
+                        <span class="badge bg-purple text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">KB -
+                            TK/RA (Siap SD)</span>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Membaca, Menulis, Berhitung,
+                                    Dikte</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Metode membaca JO.KIDS</span>
                             </li>
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-purple mt-1 fs-5"></i>
-                                <span>Tahsin Qur'an (Ula, Wustho, Aqabah)</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-start gap-3">
-                                <i class="fas fa-check-circle text-purple mt-1 fs-5"></i>
-                                <span>Metode JO.KIDS + Fun Games</span>
-                            </li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Modul 8 level & Materi
+                                    persiapan SD</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Fun games & Bonus
+                                    mengaji</span></li>
                         </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalCalistung"><i class="fas fa-images me-1"></i> Lihat
+                            Dokumentasi</button>
                     </div>
                 </div>
 
-                <!-- English Kids -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center position-relative overflow-hidden"
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
                         style="border-bottom: 5px solid var(--teal) !important;">
-                        <div class="icon-box-feature bg-teal-light text-teal mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                        <div
+                            class="icon-box-feature bg-teal-light text-teal mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-1">TAHSIN / TAHFIDZ</h4>
+                        <span class="badge bg-teal text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">TK -
+                            SD/MI</span>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Baca Iqro'-Al Qur'an metode
+                                    Ummi</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Penerapan Makhorijul huruf &
+                                    tajwid</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Materi 5 Aspek (Hafalan,
+                                    Ibadah, Akidah, dll)</span></li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalTahsin"><i class="fas fa-images me-1"></i> Lihat Dokumentasi</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
+                        style="border-bottom: 5px solid var(--pink) !important;">
+                        <div
+                            class="icon-box-feature bg-pink-light text-pink mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-1">SD / MI</h4>
+                        <span class="badge bg-pink text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">Kelas
+                            1-6</span>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Reguler Paket Mapel Umum &
+                                    Agama</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Private Paket 6-8 Mapel / Semua
+                                    Mapel</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-pink mt-1"></i><span>Soal Latihan PH/Sumatif & Trik
+                                    materi</span></li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalSDMI"><i class="fas fa-images me-1"></i> Lihat Dokumentasi</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
+                        style="border-bottom: 5px solid var(--purple) !important;">
+                        <div
+                            class="icon-box-feature bg-purple-light text-purple mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
                             <i class="fas fa-language"></i>
                         </div>
                         <h4 class="fw-bold text-dark mb-1">ENGLISH KIDS</h4>
-                        <span class="badge bg-teal text-white mb-4 shadow-sm rounded-pill px-3 py-2">KB • TK/RA •
+                        <span class="badge bg-purple text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">PG - TK -
                             SD/MI</span>
-
-                        <ul class="list-unstyled text-start text-secondary small" style="line-height: 1.8;">
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-teal mt-1 fs-5"></i>
-                                <span>Speaking & Conversation</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-start gap-3 border-bottom pb-2">
-                                <i class="fas fa-check-circle text-teal mt-1 fs-5"></i>
-                                <span>Vocabulary & Spelling</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-start gap-3">
-                                <i class="fas fa-check-circle text-teal mt-1 fs-5"></i>
-                                <span>Level Beginner sampai Basic</span>
-                            </li>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Speaking, Conversation,
+                                    Pronounciation</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Vocabulary, Writing &
+                                    Spelling</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-purple mt-1"></i><span>Level Beginner, Pre Basic,
+                                    Basic 1-6</span></li>
                         </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalEnglish"><i class="fas fa-images me-1"></i> Lihat Dokumentasi</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 bg-white border border-light p-4 rounded-4 shadow-sm text-center d-flex flex-column"
+                        style="border-bottom: 5px solid var(--teal) !important;">
+                        <div
+                            class="icon-box-feature bg-teal-light text-teal mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-1">MATEMATIKA</h4>
+                        <span class="badge bg-teal text-white mb-3 shadow-sm rounded-pill px-3 py-2 mx-auto">Kelas 1-6
+                            SD/MI</span>
+                        <ul class="list-unstyled text-start text-secondary small flex-grow-1" style="line-height: 1.6;">
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Materi sesuai tingkatan
+                                    kelas</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2 border-bottom pb-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Trik menyelesaikan soal
+                                    cepat</span></li>
+                            <li class="mb-2 d-flex align-items-start gap-2"><i
+                                    class="fas fa-check-circle text-teal mt-1"></i><span>Rumus mudah dipahami & Latihan
+                                    Soal</span></li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-sm mt-3 rounded-pill w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalMatematika"><i class="fas fa-images me-1"></i> Lihat
+                            Dokumentasi</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRICE LIST -->
     <section class="py-5 bg-light">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="section-title display-6">Price List & Opsi Kelas</h2>
-                <p class="lead text-muted mt-2">Investasi terbaik untuk masa depan pendidikan ananda</p>
+                <h2 class="section-title display-6">Price List Paket Bimbel</h2>
+                <p class="lead text-muted mt-2">Pilih paket Reguler, Private, atau Visit Home sesuai kebutuhan (Durasi
+                    90 Menit/Sesi)</p>
             </div>
 
-            <div class="row g-4 justify-content-center align-items-center">
-                <!-- Reguler -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow-sm text-center h-100 feature-card rounded-4 overflow-hidden">
-                        <div class="card-header border-0 py-4"
-                            style="background: linear-gradient(135deg, #f472b6, var(--pink));">
-                            <h5 class="mb-0 fw-bold text-white letter-spacing-1">REGULER</h5>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="card-header border-0 py-3 text-center"
+                            style="background: linear-gradient(135deg, var(--purple), var(--pink));">
+                            <h5 class="mb-0 fw-bold text-white">PLAYGROUP, CALISTUNG, SD/MI, TAHSIN</h5>
                         </div>
-                        <div class="card-body p-4 p-lg-5 bg-white d-flex flex-column">
-                            <h2 class="fw-bold text-dark mb-3">Rp 150<span class="fs-5 text-muted">.000</span></h2>
-                            <p class="badge bg-light text-secondary border px-3 py-2 rounded-pill mb-4 mx-auto">Per 12x
-                                Pertemuan</p>
-                            <p class="text-secondary mb-0 fw-medium mt-auto"><i
-                                    class="far fa-clock text-pink me-2 fs-5 align-middle"></i> 90 menit per sesi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Private (Terpopuler) -->
-                <div class="col-lg-4 col-md-6 z-2">
-                    <div class="card border-0 shadow-premium text-center h-100 rounded-4 overflow-hidden position-relative"
-                        style="transform: scale(1.05);">
-                        <!-- Label Rekomendasi -->
-                        <div class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-4 py-2"
-                            style="border-bottom-left-radius: 20px; font-size: 0.85rem; box-shadow: -5px 5px 15px rgba(0,0,0,0.1); z-index: 10;">
-                            <i class="fas fa-star me-1"></i> TERPOPULER
-                        </div>
-                        <div class="card-header border-0 py-4 position-relative"
-                            style="background: linear-gradient(135deg, #a855f7, var(--purple));">
-                            <h5 class="mb-0 fw-bold text-white letter-spacing-1 mt-1">PRIVATE</h5>
-                        </div>
-                        <div class="card-body p-4 p-lg-5 bg-white d-flex flex-column">
-                            <h2 class="fw-bold text-dark mb-3">Rp 290<span class="fs-5 text-muted">.000</span></h2>
-                            <p class="badge bg-purple-light text-purple px-3 py-2 rounded-pill mb-4 mx-auto">Per 12x
-                                Pertemuan</p>
-                            <p class="text-secondary mb-0 fw-medium mt-auto"><i
-                                    class="fas fa-user-check text-purple me-2 fs-5 align-middle"></i> Fokus khusus 1
-                                anak</p>
+                        <div class="card-body p-4 bg-white">
+                            <table class="table table-borderless align-middle mb-0">
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <td class="fw-bold text-dark"><i class="fas fa-users text-pink me-2"></i>
+                                            REGULER</td>
+                                        <td class="text-end">12x: <strong class="text-dark">Rp 150.000</strong><br>20x:
+                                            <strong class="text-dark">Rp 250.000</strong></td>
+                                    </tr>
+                                    <tr class="border-bottom bg-purple-light rounded">
+                                        <td class="fw-bold text-purple rounded-start"><i
+                                                class="fas fa-user-check me-2"></i> PRIVATE</td>
+                                        <td class="text-end rounded-end">12x: <strong class="text-dark">Rp
+                                                290.000</strong><br>20x: <strong class="text-dark">Rp 490.000</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-teal"><i class="fas fa-home me-2"></i> VISIT HOME</td>
+                                        <td class="text-end">12x: <strong class="text-dark">Rp 350.000</strong> (P) /
+                                            <strong>250.000</strong> (G)<br>20x: <strong class="text-dark">Rp
+                                                590.000</strong> (P) / <strong>420.000</strong> (G)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
 
-                <!-- Visit Home -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow-sm text-center h-100 feature-card rounded-4 overflow-hidden">
-                        <div class="card-header border-0 py-4"
-                            style="background: linear-gradient(135deg, #2dd4bf, var(--teal));">
-                            <h5 class="mb-0 fw-bold text-white letter-spacing-1">VISIT HOME</h5>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="card-header border-0 py-3 text-center"
+                            style="background: linear-gradient(135deg, var(--teal), #0ea5e9);">
+                            <h5 class="mb-0 fw-bold text-white">ENGLISH KIDS & MATEMATIKA</h5>
                         </div>
-                        <div class="card-body p-4 p-lg-5 bg-white d-flex flex-column">
-                            <h2 class="fw-bold text-dark mb-3">Rp 350<span class="fs-5 text-muted">.000</span></h2>
-                            <p class="badge bg-light text-secondary border px-3 py-2 rounded-pill mb-4 mx-auto">Per 12x
-                                Pertemuan</p>
-                            <p class="text-secondary mb-0 fw-medium mt-auto"><i
-                                    class="fas fa-home text-teal me-2 fs-5 align-middle"></i> Tentor ke rumah</p>
+                        <div class="card-body p-4 bg-white">
+                            <table class="table table-borderless align-middle mb-0">
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <td class="fw-bold text-dark"><i class="fas fa-users text-pink me-2"></i>
+                                            REGULER</td>
+                                        <td class="text-end text-dark fw-bold">12x Pertemuan: Rp 195.000</td>
+                                    </tr>
+                                    <tr class="border-bottom bg-teal-light rounded">
+                                        <td class="fw-bold text-teal rounded-start"><i
+                                                class="fas fa-user-check me-2"></i> PRIVATE</td>
+                                        <td class="text-end text-dark fw-bold rounded-end">12x Pertemuan: Rp 290.000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-teal"><i class="fas fa-home me-2"></i> VISIT HOME</td>
+                                        <td class="text-end">12x: <strong class="text-dark">Rp 350.000</strong> (P) /
+                                            <strong>250.000</strong> (G)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Banner Pendaftaran -->
             <div class="text-center mt-5 pt-3">
                 <div class="d-inline-block p-4 rounded-4 bg-white shadow-sm border-start border-4 border-warning text-start text-md-center w-100"
-                    style="max-width: 700px;">
+                    style="max-width: 750px;">
                     <div class="row align-items-center">
                         <div class="col-md-7 mb-3 mb-md-0">
-                            <h5 class="text-dark fw-bold mb-1">Biaya Pendaftaran Rp 75.000</h5>
-                            <p class="text-muted small mb-0">(Hanya sekali bayar di awal)</p>
+                            <h5 class="text-dark fw-bold mb-1">Biaya Pendaftaran Rp 75.000 / Anak</h5>
+                            <p class="text-pink fw-bold small mb-0"><i class="fas fa-gift me-1"></i> FREE BINGKISAN
+                                MENARIK & ALAT TULIS</p>
                         </div>
                         <div class="col-md-5 text-md-end">
-                            <a href="https://wa.me/6285608103201" target="_blank"
+                            <a href="https://wa.me/6285608867133" target="_blank"
                                 class="btn btn-whatsapp rounded-pill px-4 py-2 w-100">
-                                <i class="fab fa-whatsapp me-1"></i> Konsultasi Admin
+                                <i class="fab fa-whatsapp me-1"></i> Daftar Sekarang
                             </a>
                         </div>
                     </div>
@@ -226,47 +304,63 @@
         </div>
     </section>
 
-    <!-- JADWAL WAKTU -->
     <section class="py-5 bg-white position-relative">
         <div class="container py-4">
             <h2 class="section-title text-center mb-5 display-6">Opsi Waktu Belajar</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <!-- Dibungkus dalam card premium -->
                     <div class="card border-0 shadow-premium rounded-4 overflow-hidden">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-borderless text-center align-middle mb-0">
+                        <div class="table-responsive schedule-table-wrapper">
+                            <table class="table table-hover table-bordered text-center align-middle mb-0">
                                 <thead class="text-white"
-                                    style="background: linear-gradient(135deg, var(--purple), #9d174d);">
+                                    style="background: linear-gradient(135deg, var(--purple), var(--pink));">
                                     <tr>
-                                        <th class="py-4 fw-bold fs-6">Senin - Kamis</th>
-                                        <th
-                                            class="py-4 fw-bold fs-6 border-start border-end border-white border-opacity-25">
-                                            Jumat</th>
-                                        <th class="py-4 fw-bold fs-6">Sabtu</th>
+                                        <th class="py-3 fw-bold border-0">Senin - Rabu</th>
+                                        <th class="py-3 fw-bold border-0">Senin - Jum'at</th>
+                                        <th class="py-3 fw-bold border-0">Kamis - Sabtu</th>
                                     </tr>
                                 </thead>
-                                <tbody class="bg-white">
+                                <tbody class="bg-white text-dark fw-medium">
                                     <tr>
-                                        <td class="py-4 border-bottom text-dark fw-medium">09.30 - 11.00</td>
-                                        <td
-                                            class="py-4 border-bottom border-start border-end border-light text-dark fw-medium bg-light">
-                                            09.30 - 11.00</td>
-                                        <td class="py-4 border-bottom text-dark fw-medium">09.30 - 11.00</td>
+                                        <td colspan="3" class="py-3 bg-light text-secondary">Sesi Pagi - Siang</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-4 border-bottom text-dark fw-medium">11.00 - 12.30</td>
-                                        <td
-                                            class="py-4 border-bottom border-start border-end border-light text-dark fw-medium bg-light">
-                                            11.00 - 12.30</td>
-                                        <td class="py-4 border-bottom text-dark fw-medium">11.00 - 12.30</td>
+                                        <td>09.30 - 11.00</td>
+                                        <td>09.30 - 11.00</td>
+                                        <td>09.30 - 11.00</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-4 text-dark fw-medium">14.00 - 15.30</td>
-                                        <td
-                                            class="py-4 border-start border-end border-light text-dark fw-medium bg-light">
-                                            14.00 - 15.30</td>
-                                        <td class="py-4 text-dark fw-medium">14.00 - 15.30</td>
+                                        <td>11.00 - 12.30</td>
+                                        <td>11.00 - 12.30</td>
+                                        <td>11.00 - 12.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.30 - 14.00</td>
+                                        <td>12.30 - 14.00</td>
+                                        <td>12.30 - 14.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="py-3 bg-light text-secondary">Sesi Sore - Malam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14.00 - 15.30</td>
+                                        <td>14.00 - 15.30</td>
+                                        <td>14.00 - 15.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.30 - 17.00</td>
+                                        <td>15.30 - 17.00</td>
+                                        <td>15.30 - 17.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.00 - 18.30</td>
+                                        <td>17.00 - 18.30</td>
+                                        <td>17.00 - 18.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.30 - 20.00</td>
+                                        <td>18.30 - 20.00</td>
+                                        <td>18.30 - 20.00</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -277,10 +371,170 @@
         </div>
     </section>
 
-    <!-- Footer Placeholder -->
+    <div class="modal fade" id="modalPlaygroup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselPlaygroup" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/Playgroub/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Playgroup"></div>
+                            <div class="carousel-item"><img src="/public/Playgroub/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Playgroup"></div>
+                            <div class="carousel-item"><img src="/public/Playgroub/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Playgroup"></div>
+                            <div class="carousel-item"><img src="/public/Playgroub/4.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Playgroup"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlaygroup"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlaygroup"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"
+                                aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCalistung" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselCalistung" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/Calistung/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Calistung"></div>
+                            <div class="carousel-item"><img src="/public/Calistung/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Calistung"></div>
+                            <div class="carousel-item"><img src="/public/Calistung/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Calistung"></div>
+                            <div class="carousel-item"><img src="/public/Calistung/4.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Calistung"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCalistung"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCalistung"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEnglish" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselEnglish" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/ENGLISH KIDS/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="English"></div>
+                            <div class="carousel-item"><img src="/public/ENGLISH KIDS/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="English"></div>
+                            <div class="carousel-item"><img src="/public/ENGLISH KIDS/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="English"></div>
+                            <div class="carousel-item"><img src="/public/ENGLISH KIDS/4.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="English"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEnglish"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEnglish"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMatematika" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselMtk" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/MATEMATIKA/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="MTK"></div>
+                            <div class="carousel-item"><img src="/public/MATEMATIKA/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="MTK"></div>
+                            <div class="carousel-item"><img src="/public/MATEMATIKA/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="MTK"></div>
+                            <div class="carousel-item"><img src="/public/MATEMATIKA/4.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="MTK"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtk"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMtk"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTahsin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselTahsin" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/TAHSINTAHFIDZ QUR'AN/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Tahsin"></div>
+                            <div class="carousel-item"><img src="/public/TAHSINTAHFIDZ QUR'AN/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Tahsin"></div>
+                            <div class="carousel-item"><img src="/public/TAHSINTAHFIDZ QUR'AN/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="Tahsin"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTahsin"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTahsin"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSDMI" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end"><button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body p-0">
+                    <div id="carouselSDMI" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="/public/SDMI/1.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="SDMI"></div>
+                            <div class="carousel-item"><img src="/public/SDMI/2.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="SDMI"></div>
+                            <div class="carousel-item"><img src="/public/SDMI/3.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="SDMI"></div>
+                            <div class="carousel-item"><img src="/public/SDMI/4.jpeg"
+                                    class="d-block w-100 portrait-carousel-img" alt="SDMI"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSDMI"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSDMI"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="footer-placeholder" class="mt-auto"></div>
 
-    <!-- Scripts (Fixed Paths) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>

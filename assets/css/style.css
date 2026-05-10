@@ -793,3 +793,141 @@ h6 {
         align-items: center;
     }
 }
+
+/* =========================================================================
+   TAMBAHAN REVISI: MODAL DOKUMENTASI, TABEL HARGA BROSUR & SOSMED
+   ========================================================================= */
+
+/* Sosmed Ikon Tambahan */
+.fab.fa-tiktok,
+.fab.fa-youtube {
+    transition: all 0.3s ease;
+}
+
+/* Portrait Image Carousel dalam Modal */
+.portrait-carousel-img {
+    height: 70vh;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 12px;
+}
+
+.modal-content.bg-transparent {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Tabel Jadwal Scrollable */
+.schedule-table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.schedule-table-wrapper thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Penyesuaian Grid 6 Program */
+.program-features li span {
+    font-size: 0.9rem;
+}
+
+.feature-card .icon-box-feature {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 2rem !important;
+}
+
+/* =========================================================================
+   MASONRY GRID KHUSUS HALAMAN GALLERY (PINTEREST STYLE)
+   ========================================================================= */
+.masonry-container {
+    column-count: 3;
+    column-gap: 1.5rem;
+    padding: 15px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.masonry-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(219, 39, 119, 0.15);
+    /* Menggunakan variabel Pink kamu */
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.masonry-item:hover img {
+    transform: scale(1.05);
+}
+
+.masonry-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(30, 41, 59, 0.9), transparent);
+    padding: 2rem 1.5rem 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.masonry-item:hover .masonry-overlay {
+    transform: translateY(0);
+}
+
+/* Tombol Filter Kategori */
+.filter-btn {
+    border: 2px solid transparent;
+    background: #fff;
+    color: #475569;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    color: white;
+    box-shadow: 0 10px 20px rgba(109, 40, 217, 0.2);
+}
+
+/* Responsif Masonry Grid */
+@media (max-width: 992px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .masonry-container {
+        column-count: 1;
+    }
+
+    /* Di HP overlay selalu muncul agar gampang dibaca */
+    .masonry-overlay {
+        transform: translateY(0);
+        padding: 1rem;
+        background: linear-gradient(to top, rgba(30, 41, 59, 0.7), transparent);
+    }
+}
