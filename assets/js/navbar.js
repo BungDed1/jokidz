@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                    <!-- FIX: Hapus width="45" dan tambahkan style aspect-ratio agar tidak gepeng -->
+                    <img src="/public/jokids.png" alt="Logo JO.KIDS" class="rounded-circle border border-2 border-white shadow-sm bg-white" style="aspect-ratio: 1/1; width: auto; object-fit: cover;">
                     <span class="ms-2">JO.KIDS</span>
                 </a>
                 
